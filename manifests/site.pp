@@ -3,20 +3,21 @@ node 'instance-1.c.master-reactor-187303.internal' {
 #   ensure => 'present',
 #   content => inline_template("Create by Puppet at <%= Time.now %>\n"),
 # }
-  $wikisitename = 'wiki'
-  $wikimetanamespace = 'Wiki'
-  $wikiserver = "http://10.152.0.3"
-  class { 'linux': }
-  class { 'mediawik': }
+##  $wikisitename = 'wiki'
+##  $wikimetanamespace = 'Wiki'
+##  $wikiserver = "http://10.152.0.3"
+##  class { 'linux': }
+##  class { 'mediawik': }
+  hiera_include('classes', undef)
 }
 node 'puppetmaster.c.master-reactor-187303.internal' {
 
 ##  $wikisitename = 'wiki'
 ##  $wikimetanamespace = 'Wiki'
 ##  $wikiserver = "http://10.152.0.2"
-  class { 'linux': }
-  class { 'mediawiki': }
-##  hiera_include('classes')
+##  class { 'linux': }
+##  class { 'mediawiki': }
+  hiera_include('classes', undef)
 ##  lookup('classes').include
 }
 
