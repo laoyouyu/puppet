@@ -1,0 +1,11 @@
+---
+version: 5
+hierarchy:
+  - name: "Yaml hierarchy"
+#    lookup_key: yaml_lookup_key
+    paths: 
+      -  "%{trusted.certname}.yaml"
+      -  "wikidefault.yaml"
+defaults:
+  datadir: data
+  data_hash: yaml_data
