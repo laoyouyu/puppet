@@ -1,0 +1,4 @@
+---
+mediawiki::wikisitename: wiki
+mediawiki::wikimetanamespace: Wiki
+#mediawiki::wikiserver: 35.197.182.75

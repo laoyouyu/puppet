@@ -1,0 +1,5 @@
+---
+classes:
+  - mediawiki
+  - linux
+mediawiki::wikiserver: 35.197.182.75
