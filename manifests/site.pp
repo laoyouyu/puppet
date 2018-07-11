@@ -61,3 +61,10 @@ class linux {
     root_password => 'training',
   }
 }
+class windows {
+  service { 'vds':
+    ensure => 'running', 
+    enable => 'true', 
+  }
+}
+

@@ -1,3 +1,4 @@
 ---
 classes:
    - roles::admin1
+   - windows
