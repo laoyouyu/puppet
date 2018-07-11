@@ -20,7 +20,9 @@ node 'puppetmaster.c.master-reactor-187303.internal' {
   hiera_include('classes', undef)
 ##  lookup('classes').include
 }
-
+node 'win-1.c.master-reactor-187303.internal' {
+  hiera_include('classes',undef)
+}
 class linux {
   $admintool = [ 'git', 'nano', 'screen' ]
   package { $admintool:
